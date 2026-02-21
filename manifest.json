@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Shafa Photo view",
+  "version": "3.0",
+  "description": "Advanced hover preview with rate limit, backoff, priority queue and sticky popup.",
+  "host_permissions": ["https://shafa.ua/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://shafa.ua/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
